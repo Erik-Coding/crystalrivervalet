@@ -186,7 +186,7 @@ function Hero() {
       <div className="absolute inset-0">
         <img
           src={heroRiver}
-          alt="Crystal river winding through Central Texas cypress trees"
+          alt="San Antonio River Walk with stone bridges and cypress trees at golden hour"
           className="h-full w-full object-cover"
           width={1920}
           height={1200}
