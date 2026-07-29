@@ -185,8 +185,8 @@ function Hero() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroRiver}
-          alt="San Antonio River Walk with stone bridges and cypress trees at golden hour"
+          src={heroRiver.url}
+          alt="Clear flowing San Marcos River with limestone banks and cypress trees"
           className="h-full w-full object-cover"
           width={1920}
           height={1200}
