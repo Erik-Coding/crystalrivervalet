@@ -27,7 +27,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { CRVSLogo } from "@/components/CRVSLogo";
 
-import heroRiver from "@/assets/hero-river.jpg";
+import heroRiver from "@/assets/hero-san-river.png.asset.json";
 import galleryUniform from "@/assets/gallery-uniform.jpg";
 import galleryCommunity from "@/assets/gallery-community.jpg";
 import galleryBin from "@/assets/gallery-bin.jpg";
@@ -185,8 +185,8 @@ function Hero() {
     <section className="relative overflow-hidden">
       <div className="absolute inset-0">
         <img
-          src={heroRiver}
-          alt="San Antonio River Walk with stone bridges and cypress trees at golden hour"
+          src={heroRiver.url}
+          alt="Clear flowing San Marcos River with limestone banks and cypress trees"
           className="h-full w-full object-cover"
           width={1920}
           height={1200}
