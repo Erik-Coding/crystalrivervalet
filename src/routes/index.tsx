@@ -27,7 +27,7 @@ import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { CRVSLogo } from "@/components/CRVSLogo";
 
-import heroRiver from "@/assets/hero-river.jpg";
+import heroRiver from "@/assets/hero-san-river.png.asset.json";
 import galleryUniform from "@/assets/gallery-uniform.jpg";
 import galleryCommunity from "@/assets/gallery-community.jpg";
 import galleryBin from "@/assets/gallery-bin.jpg";
