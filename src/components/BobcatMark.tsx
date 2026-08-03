@@ -29,7 +29,7 @@ export function BobcatBadge({
 }) {
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border border-current/25 px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] ${className}`}
+      className={`inline-flex items-center gap-2 rounded-full border border-current px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] ${className}`}
     >
       <BobcatMark className="h-3.5 w-3.5 opacity-80" />
       {label}
