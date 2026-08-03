@@ -168,7 +168,7 @@ function ResidentSignup() {
                           active ? "bg-forest text-cream" : "bg-forest/10 text-forest-deep"
                         }`}
                       >
-                        <m.icon className="h-4.5 w-4.5" />
+                        <m.icon className="h-5 w-5" />
                       </span>
                       <span className="min-w-0">
                         <span className="block text-sm font-medium text-forest-deep">{m.label}</span>
