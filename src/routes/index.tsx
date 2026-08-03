@@ -206,7 +206,7 @@ function Hero() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-cream/85 leading-relaxed">
             Premium doorstep valet trash service for apartment communities across San Marcos
-            and Central Texas — professional, dependable, and quietly excellent every single night.
+            and Central Texas professional, dependable, and quietly excellent every single night.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a href="#contact">
