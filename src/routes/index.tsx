@@ -216,7 +216,7 @@ function Hero() {
           <div className="flex flex-wrap items-center gap-3">
             <div className="inline-flex items-center gap-2 rounded-full border border-cream/30 bg-cream/10 px-4 py-1.5 text-xs uppercase tracking-[0.2em] backdrop-blur">
               <Sparkles className="h-3.5 w-3.5 text-gold" />
-              Student owned · San Marcos
+              LOCALLY BASED · SAN MARCOS
             </div>
             <BobcatBadge className="text-cream/85 bg-cream/5 backdrop-blur" />
           </div>
@@ -225,7 +225,7 @@ function Hero() {
             <span className="italic text-gold">Better places.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-cream/85 leading-relaxed">
-            We pick up trash at your residents' doors five nights a week. We live here, we go
+            We pick up trash at your residents' doors up to five nights a week. We live here, we go
             to school here, and we can be on your property in minutes when something comes up.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
