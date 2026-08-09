@@ -1,38 +1,62 @@
+import bobcat from "@/assets/bobcat-head.png.asset.json";
+import txst from "@/assets/txst-wordmark.png.asset.json";
+
 /**
- * Subtle monochrome paw mark used as a light Texas State Bobcats nod.
- * Renders in currentColor only (white/cream or black), never maroon and gold.
+ * Texas State Bobcats mark. Source art is black on transparent, so the
+ * default renders it inverted (white) for dark forest backgrounds.
+ * Pass dark to keep it black on light backgrounds. Never maroon and gold.
  */
-export function BobcatMark({ className = "" }: { className?: string }) {
+export function BobcatMark({
+  className = "",
+  dark = false,
+}: {
+  className?: string;
+  dark?: boolean;
+}) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      className={className}
-      fill="currentColor"
-      xmlns="http://www.w3.org/2000/svg"
+    <img
+      src={bobcat.url}
+      alt=""
       aria-hidden="true"
-    >
-      <ellipse cx="12" cy="15.4" rx="5.1" ry="4.2" />
-      <ellipse cx="5.4" cy="9.6" rx="2.3" ry="2.9" transform="rotate(-18 5.4 9.6)" />
-      <ellipse cx="9.6" cy="6.1" rx="2.1" ry="2.8" transform="rotate(-7 9.6 6.1)" />
-      <ellipse cx="14.4" cy="6.1" rx="2.1" ry="2.8" transform="rotate(7 14.4 6.1)" />
-      <ellipse cx="18.6" cy="9.6" rx="2.3" ry="2.9" transform="rotate(18 18.6 9.6)" />
-    </svg>
+      className={`object-contain ${dark ? "" : "invert"} ${className}`}
+      loading="lazy"
+    />
+  );
+}
+
+export function TxstWordmark({
+  className = "",
+  dark = false,
+}: {
+  className?: string;
+  dark?: boolean;
+}) {
+  return (
+    <img
+      src={txst.url}
+      alt="Texas State University TXST"
+      className={`object-contain ${dark ? "" : "invert"} ${className}`}
+      loading="lazy"
+    />
   );
 }
 
 export function BobcatBadge({
   className = "",
+  dark = false,
   label = "Bobcat owned · Texas State University",
 }: {
   className?: string;
+  dark?: boolean;
   label?: string;
 }) {
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-full border border-current px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] ${className}`}
+      className={`inline-flex items-center gap-2.5 rounded-full border border-current px-3.5 py-1.5 text-[10px] uppercase tracking-[0.2em] ${className}`}
     >
-      <BobcatMark className="h-3.5 w-3.5 opacity-80" />
+      <BobcatMark dark={dark} className="h-4 w-4 opacity-90" />
       {label}
+      <TxstWordmark dark={dark} className="h-2.5 opacity-80" />
     </span>
   );
 }

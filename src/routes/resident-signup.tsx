@@ -96,7 +96,7 @@ function ResidentSignup() {
       </header>
 
       <section className="bg-forest-deep text-cream relative overflow-hidden">
-        <BobcatMark className="pointer-events-none absolute -right-8 -bottom-12 h-64 w-64 text-cream opacity-[0.05]" />
+        <BobcatMark className="pointer-events-none absolute -right-8 -bottom-12 h-64 w-64 opacity-[0.07]" />
         <div className="container-x py-16 md:py-24 relative">
           <BobcatBadge className="text-cream/80" />
           <h1 className="mt-6 font-display text-4xl md:text-6xl leading-[1.05] max-w-3xl">
