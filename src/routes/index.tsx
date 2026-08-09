@@ -33,6 +33,7 @@ import { BobcatMark, BobcatBadge, TxstWordmark } from "@/components/BobcatMark";
 
 import heroRiver from "@/assets/hero-river-aerial.png.asset.json";
 import galleryUniform from "@/assets/gallery-uniform.jpg";
+import crvsPolo from "@/assets/crvs-polo.jpeg.asset.json";
 import galleryCommunity from "@/assets/gallery-community.jpg";
 import galleryBin from "@/assets/gallery-bin.jpg";
 import galleryTeam from "@/assets/gallery-team.jpg";
@@ -330,9 +331,9 @@ function About() {
       <div className="container-x grid lg:grid-cols-2 gap-16 items-center">
         <div className="relative">
           <img
-            src={galleryUniform}
-            alt="Professional uniformed CRVS attendant"
-            className="rounded-2xl w-full h-[560px] object-cover shadow-xl"
+            src={crvsPolo.url}
+            alt="CRVS attendant in a black branded CRVS polo at an apartment entrance"
+            className="rounded-2xl w-full h-[560px] object-cover object-top shadow-xl"
             loading="lazy"
             width={1200}
             height={1400}
