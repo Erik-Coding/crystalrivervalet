@@ -29,9 +29,9 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import { CRVSLogo } from "@/components/CRVSLogo";
-import { BobcatMark, BobcatBadge } from "@/components/BobcatMark";
+import { BobcatMark, BobcatBadge, TxstWordmark } from "@/components/BobcatMark";
 
-import heroRiver from "@/assets/hero-san-river.png.asset.json";
+import heroRiver from "@/assets/hero-river-aerial.png.asset.json";
 import galleryUniform from "@/assets/gallery-uniform.jpg";
 import galleryCommunity from "@/assets/gallery-community.jpg";
 import galleryBin from "@/assets/gallery-bin.jpg";
@@ -116,11 +116,11 @@ function TopBar() {
         </div>
         <div className="flex items-center gap-4 opacity-90">
           <span className="flex items-center gap-2">
-            <BobcatMark className="h-3.5 w-3.5 text-cream/70" /> Student owned in San Marcos
+            <BobcatMark className="h-4 w-4 opacity-80" /> Student owned in San Marcos
           </span>
           <span className="h-3 w-px bg-cream/30" />
           <a href="#" aria-label="Facebook" className="hover:text-cream"><Facebook className="h-3.5 w-3.5" /></a>
-          <a href="#" aria-label="Instagram" className="hover:text-cream"><Instagram className="h-3.5 w-3.5" /></a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-cream"><Instagram className="h-3.5 w-3.5" /></a>
         </div>
       </div>
     </div>
@@ -149,7 +149,7 @@ function Header() {
             to="/resident-signup"
             className="inline-flex items-center gap-1.5 text-sm font-semibold text-forest-deep hover:text-forest"
           >
-            <BobcatMark className="h-3.5 w-3.5 opacity-70" /> Resident Sign Up
+            <BobcatMark dark className="h-3.5 w-3.5 opacity-70" /> Resident Sign Up
           </Link>
         </nav>
         <div className="flex items-center gap-3">
@@ -185,7 +185,7 @@ function Header() {
               onClick={() => setOpen(false)}
               className="flex items-center gap-2 text-sm font-semibold py-2 text-forest-deep"
             >
-              <BobcatMark className="h-4 w-4 opacity-70" /> Resident Sign Up
+              <BobcatMark dark className="h-4 w-4 opacity-70" /> Resident Sign Up
             </Link>
             <a href="#contact" onClick={() => setOpen(false)}>
               <Button className="w-full bg-forest text-cream rounded-full">Request a Quote</Button>
@@ -203,7 +203,7 @@ function Hero() {
       <div className="absolute inset-0">
         <img
           src={heroRiver.url}
-          alt="Clear flowing San Marcos River with limestone banks and cypress trees"
+          alt="Aerial view of the San Marcos River and Sewell Park in San Marcos, Texas"
           className="h-full w-full object-cover"
           width={1920}
           height={1200}
@@ -368,7 +368,7 @@ function About() {
             ))}
           </div>
           <div className="mt-6 flex items-center gap-3 text-forest-deep/70">
-            <BobcatMark className="h-5 w-5" />
+            <BobcatMark dark className="h-5 w-5 opacity-80" />
             <span className="text-xs uppercase tracking-[0.2em]">Proudly Bobcat owned</span>
           </div>
         </div>
@@ -457,7 +457,7 @@ function ResidentValue() {
         </div>
         <div className="mt-10 rounded-2xl border border-forest/20 bg-cream p-8 flex flex-col md:flex-row items-start md:items-center gap-6 justify-between">
           <div className="flex items-start gap-4">
-            <BobcatMark className="h-7 w-7 text-forest shrink-0 mt-1" />
+            <BobcatMark dark className="h-7 w-7 shrink-0 mt-1 opacity-80" />
             <p className="text-forest-deep max-w-2xl">
               Residents in our surveys said the same thing over and over: they would use valet
               trash if their community offered it. Give them that, and renewal season gets a lot
@@ -489,7 +489,7 @@ function Benefits() {
   return (
     <section className="py-24 md:py-32 bg-forest-deep text-cream relative overflow-hidden">
       <div className="absolute inset-0 opacity-[0.04]" style={{ backgroundImage: "radial-gradient(circle at 30% 20%, white 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
-      <BobcatMark className="pointer-events-none absolute -right-10 bottom-0 h-72 w-72 text-cream opacity-[0.04]" />
+      <BobcatMark className="pointer-events-none absolute -right-10 bottom-0 h-72 w-72 opacity-[0.06]" />
       <div className="container-x relative grid lg:grid-cols-[1fr_1.1fr] gap-16 items-start">
         <div>
           <div className="text-xs uppercase tracking-[0.25em] text-gold">For Property Managers</div>
@@ -727,10 +727,14 @@ function Footer() {
           </p>
           <div className="mt-5">
             <BobcatBadge className="text-cream/70" />
+            <div className="mt-5 flex items-center gap-3 text-cream/60">
+              <TxstWordmark className="h-4 opacity-70" />
+              <span className="text-[10px] uppercase tracking-[0.2em]">Proudly Bobcat owned</span>
+            </div>
           </div>
           <div className="mt-5 flex gap-3">
             <a href="#" aria-label="Facebook" className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 hover:bg-cream/10"><Facebook className="h-4 w-4" /></a>
-            <a href="#" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 hover:bg-cream/10"><Instagram className="h-4 w-4" /></a>
+            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-full border border-cream/20 hover:bg-cream/10"><Instagram className="h-4 w-4" /></a>
           </div>
         </div>
         <div>
