@@ -40,6 +40,7 @@ import galleryClean from "@/assets/gallery-clean.jpg";
 
 const PHONE_DISPLAY = "(484) 633-9535";
 const PHONE_TEL = "+14846339535";
+const INSTAGRAM_URL = "https://www.instagram.com/crvs.smtx";
 
 export const Route = createFileRoute("/")({
   head: () => ({
