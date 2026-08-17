@@ -31,9 +31,9 @@ import { toast } from "sonner";
 import { CRVSLogo } from "@/components/CRVSLogo";
 import { BobcatMark, BobcatBadge, TxstWordmark } from "@/components/BobcatMark";
 
-import heroRiver from "@/assets/hero-river-aerial.png.asset.json";
+const heroRiver = { url: "/images/hero-river-aerial.png" };
 import galleryUniform from "@/assets/gallery-uniform.jpg";
-import crvsPolo from "@/assets/crvs-polo.jpeg.asset.json";
+const crvsPolo = { url: "/images/crvs-polo.jpeg" };
 import galleryCommunity from "@/assets/gallery-community.jpg";
 import galleryBin from "@/assets/gallery-bin.jpg";
 import galleryTeam from "@/assets/gallery-team.jpg";
