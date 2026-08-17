@@ -1,5 +1,5 @@
-import bobcat from "@/assets/bobcat-head.png.asset.json";
-import txst from "@/assets/txst-wordmark.png.asset.json";
+const bobcat = { url: "/images/bobcat-head.png" };
+const txst = { url: "/images/txst-wordmark.png" };
 
 /**
  * Texas State Bobcats mark. Source art is black on transparent, so the
